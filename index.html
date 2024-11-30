@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generalized Resonance Framework</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Hero Section Styling */
+        .hero {
+            background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+            color: white;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            position: relative;
+        }
+
+        .hero .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .hero .cta-button {
+            background: linear-gradient(90deg, #ff7eb3, #ff758c);
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(255, 117, 140, 0.3);
+        }
+
+        .hero .cta-button:hover {
+            background: linear-gradient(90deg, #ff758c, #ff7eb3);
+            box-shadow: 0 8px 20px rgba(255, 117, 140, 0.5);
+        }
+
+        /* Features Section */
+        .feature-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        /* Table Section */
+        .table-striped tbody tr:hover {
+            background-color: rgba(0, 123, 255, 0.2);
+        }
+
+        /* Contact Section */
+        .contact-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-submit {
+            background: linear-gradient(90deg, #6a82fb, #fc5c7d);
+            color: white;
+            border: none;
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(90deg, #fc5c7d, #6a82fb);
+        }
+
+        /* Footer */
+        footer {
+            background: #212529;
+            color: #adb5bd;
+        }
+
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="display-3 fw-bold">Generalized Resonance Framework (GRF)</h1>
+            <p class="lead">Redefining the universe through oscillatory, quantum, and stochastic dynamics.</p>
+            <a href="https://github.com/lobsterhandz/DRS-Warpdrive-Program" class="btn btn-lg cta-button">See the Project</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="text-primary fw-bold">About GRF</h2>
+                    <p class="text-muted">
+                        The GRF redefines our understanding of the universe by integrating concepts such as spacetime oscillations, quantum corrections, and stochastic dynamics into a single framework.
+                    </p>
+                    <ul>
+                        <li><strong>Oscillatory Dynamics:</strong> Exploring spacetime vibrations.</li>
+                        <li><strong>Quantum Gravity:</strong> Bridging the quantum and classical worlds.</li>
+                        <li><strong>Stochastic Dynamics:</strong> Understanding cosmic randomness.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/about.png" alt="About GRF" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container text-center">
+            <h2 class="text-success fw-bold mb-4">Key Features of GRF</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded shadow">
+                        <img src="assets/oscillation.png" alt="Oscillation" class="feature-icon">
+                        <h5>Oscillatory Dynamics</h5>
+                        <p>Examining spacetime oscillations and their cosmic implications.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded shadow">
+                        <img src="assets/quantum.png" alt="Quantum" class="feature-icon">
+                        <h5>Quantum Gravity</h5>
+                        <p>Unifying quantum mechanics and general relativity seamlessly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded shadow">
+                        <img src="assets/stochastic.png" alt="Stochastic" class="feature-icon">
+                        <h5>Stochastic Dynamics</h5>
+                        <p>Modeling structured randomness in cosmic formations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsive Table Section -->
+    <section id="table" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-info fw-bold">GRF Component Comparison</h2>
+            <div class="table-responsive mt-4">
+                <table class="table table-striped">
+                    <thead class="bg-primary text-white">
+                        <tr>
+                            <th>Component</th>
+                            <th>Explanation</th>
+                            <th>Behavior</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oscillatory Dynamics</td>
+                            <td>Models spacetime oscillations.</td>
+                            <td>Significant during high-energy events like mergers.</td>
+                        </tr>
+                        <tr>
+                            <td>Quantum Gravity</td>
+                            <td>Corrects classical equations for quantum effects.</td>
+                            <td>Dominates near singularities.</td>
+                        </tr>
+                        <tr>
+                            <td>Stochastic Dynamics</td>
+                            <td>Encodes structured randomness.</td>
+                            <td>Influences large-scale cosmic structures.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-danger fw-bold">Get in Touch</h2>
+            <div class="contact-card mx-auto mt-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 GRF Initiative. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about" class="me-3">About</a>
+                <a href="#features" class="me-3">Features</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
